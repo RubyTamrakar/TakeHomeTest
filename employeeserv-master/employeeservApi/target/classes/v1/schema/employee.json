@@ -1,0 +1,74 @@
+{
+  "title": "Employee resource",
+  "description": "Employee resource object",
+  "type": "object",
+  "properties":
+  {
+    "id": {
+      "description": "employee id",
+      "type": "integer"
+    },
+    "first_name": {
+      "description": "first name",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "last_name": {
+      "description": "last name",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "date_of_birth" : {
+      "type": "date",
+      "description": "date of birth"
+    },
+    "address": {
+      "type": "address",
+      "properties": {
+        "id": {
+          "description": "Address id",
+          "type": "integer"
+        },
+        "employeeId":{
+          "type": "integer"
+        },
+        "line1": {
+          "type": "string",
+          "maxLength": 255,
+          "minLength": 1,
+          "description": "line 1"
+        },
+        "line2": {
+          "type": "string",
+          "description": "line 2"
+        },"city": {
+          "type": "string",
+          "maxLength": 255,
+          "minLength": 1,
+          "description": "City"
+        },"state": {
+          "type": "string",
+          "maxLength": 255,
+          "minLength": 1,
+          "description": "state"
+        },"country": {
+          "type": "string",
+          "maxLength": 255,
+          "minLength": 1,
+          "description": "country"
+        },"zip_code": {
+          "type": "string",
+          "maxLength": 5,
+          "minLength": 5,
+          "description": "zip_code"
+        }
+      }
+    }
+  },
+  "required": [
+    "first_name",
+    "last_name"
+  ]
+}

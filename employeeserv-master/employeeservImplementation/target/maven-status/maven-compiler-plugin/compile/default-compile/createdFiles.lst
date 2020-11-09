@@ -1,0 +1,4 @@
+com\paypal\bfs\test\employeeserv\service\employeeService.class
+com\paypal\bfs\test\employeeserv\impl\EmployeeResourceImpl.class
+com\paypal\bfs\test\employeeserv\EmployeeservApplication.class
+com\paypal\bfs\test\employeeserv\repository\IEmployee.class
